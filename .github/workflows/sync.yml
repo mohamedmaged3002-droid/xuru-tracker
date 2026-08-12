@@ -38,7 +38,10 @@ jobs:
         run: |
           git config user.name  "xuru-tracker"
           git config user.email "actions@github.com"
-          git add docs data
+          # Only what this workflow owns. data/r2-photos.json and data/photo-plan.json
+          # are local photo-pipeline state — committing them from CI clobbers a
+          # running upload and guarantees rebase conflicts.
+          git add docs data/roster.json
           # Never fail the run just because nothing changed.
           git diff --staged --quiet || git commit -m "calendar: refresh feeds [skip ci]"
           git push || true
