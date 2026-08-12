@@ -198,6 +198,7 @@ issues = [
   'We may quote a stay Xuru would reject, which surfaces as a failed booking to the guest.',
   'Per-unit (ideally per-date) minimum-stay rules.'),
 ]
+issues = [r for r in issues if not r[0].startswith('0 ')]   # drop resolved issues
 for i, row in enumerate(issues, 5):
     ws3.cell(row=i, column=1, value=i - 4)
     for c, v in enumerate(row, 2): ws3.cell(row=i, column=c, value=v)
