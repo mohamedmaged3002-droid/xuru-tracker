@@ -1,0 +1,671 @@
+{
+ "fetchedAt": "2026-08-12T23:05:25.081Z",
+ "count": 166,
+ "roster": [
+  {
+   "id": 182530,
+   "city": "El Gouna"
+  },
+  {
+   "id": 206090,
+   "city": "El Gouna"
+  },
+  {
+   "id": 242959,
+   "city": "El Gouna"
+  },
+  {
+   "id": 165961,
+   "city": "El Gouna"
+  },
+  {
+   "id": 243020,
+   "city": "El Gouna"
+  },
+  {
+   "id": 197511,
+   "city": "El Gouna"
+  },
+  {
+   "id": 205451,
+   "city": "El Gouna"
+  },
+  {
+   "id": 242854,
+   "city": "El Gouna"
+  },
+  {
+   "id": 187559,
+   "city": "El Gouna"
+  },
+  {
+   "id": 158390,
+   "city": "El Gouna"
+  },
+  {
+   "id": 230618,
+   "city": "El Gouna"
+  },
+  {
+   "id": 204278,
+   "city": "El Gouna"
+  },
+  {
+   "id": 234253,
+   "city": "El Gouna"
+  },
+  {
+   "id": 154642,
+   "city": "El Gouna"
+  },
+  {
+   "id": 144177,
+   "city": "El Gouna"
+  },
+  {
+   "id": 148806,
+   "city": "El Gouna"
+  },
+  {
+   "id": 162631,
+   "city": "El Gouna"
+  },
+  {
+   "id": 152911,
+   "city": "El Gouna"
+  },
+  {
+   "id": 164193,
+   "city": "El Gouna"
+  },
+  {
+   "id": 222562,
+   "city": "El Gouna"
+  },
+  {
+   "id": 162942,
+   "city": "El Gouna"
+  },
+  {
+   "id": 165253,
+   "city": "El Gouna"
+  },
+  {
+   "id": 232838,
+   "city": "El Gouna"
+  },
+  {
+   "id": 187550,
+   "city": "El Gouna"
+  },
+  {
+   "id": 151456,
+   "city": "El Gouna"
+  },
+  {
+   "id": 235177,
+   "city": "El Gouna"
+  },
+  {
+   "id": 235948,
+   "city": "El Gouna"
+  },
+  {
+   "id": 145585,
+   "city": "El Gouna"
+  },
+  {
+   "id": 228022,
+   "city": "El Gouna"
+  },
+  {
+   "id": 164283,
+   "city": "El Gouna"
+  },
+  {
+   "id": 164292,
+   "city": "El Gouna"
+  },
+  {
+   "id": 243160,
+   "city": "El Gouna"
+  },
+  {
+   "id": 167898,
+   "city": "El Gouna"
+  },
+  {
+   "id": 180704,
+   "city": "El Gouna"
+  },
+  {
+   "id": 167910,
+   "city": "El Gouna"
+  },
+  {
+   "id": 204277,
+   "city": "El Gouna"
+  },
+  {
+   "id": 229120,
+   "city": "El Gouna"
+  },
+  {
+   "id": 159498,
+   "city": "El Gouna"
+  },
+  {
+   "id": 189213,
+   "city": "El Gouna"
+  },
+  {
+   "id": 258881,
+   "city": "El Gouna"
+  },
+  {
+   "id": 162629,
+   "city": "El Gouna"
+  },
+  {
+   "id": 248906,
+   "city": "El Gouna"
+  },
+  {
+   "id": 205645,
+   "city": "El Gouna"
+  },
+  {
+   "id": 233550,
+   "city": "El Gouna"
+  },
+  {
+   "id": 228181,
+   "city": "El Gouna"
+  },
+  {
+   "id": 217948,
+   "city": "El Gouna"
+  },
+  {
+   "id": 259452,
+   "city": "El Gouna"
+  },
+  {
+   "id": 171197,
+   "city": "El Gouna"
+  },
+  {
+   "id": 155329,
+   "city": "El Gouna"
+  },
+  {
+   "id": 267971,
+   "city": "El Gouna"
+  },
+  {
+   "id": 171752,
+   "city": "El Gouna"
+  },
+  {
+   "id": 234993,
+   "city": "El Gouna"
+  },
+  {
+   "id": 144433,
+   "city": "El Gouna"
+  },
+  {
+   "id": 226097,
+   "city": "El Gouna"
+  },
+  {
+   "id": 205911,
+   "city": "El Gouna"
+  },
+  {
+   "id": 165210,
+   "city": "El Gouna"
+  },
+  {
+   "id": 164202,
+   "city": "El Gouna"
+  },
+  {
+   "id": 228293,
+   "city": "El Gouna"
+  },
+  {
+   "id": 166603,
+   "city": "El Gouna"
+  },
+  {
+   "id": 154575,
+   "city": "El Gouna"
+  },
+  {
+   "id": 235326,
+   "city": "El Gouna"
+  },
+  {
+   "id": 176316,
+   "city": "El Gouna"
+  },
+  {
+   "id": 250287,
+   "city": "El Gouna"
+  },
+  {
+   "id": 269063,
+   "city": "El Gouna"
+  },
+  {
+   "id": 250119,
+   "city": "El Gouna"
+  },
+  {
+   "id": 151339,
+   "city": "El Gouna"
+  },
+  {
+   "id": 182842,
+   "city": "El Gouna"
+  },
+  {
+   "id": 258715,
+   "city": "El Gouna"
+  },
+  {
+   "id": 209857,
+   "city": "El Gouna"
+  },
+  {
+   "id": 158950,
+   "city": "El Gouna"
+  },
+  {
+   "id": 167666,
+   "city": "El Gouna"
+  },
+  {
+   "id": 250288,
+   "city": "El Gouna"
+  },
+  {
+   "id": 197533,
+   "city": "El Gouna"
+  },
+  {
+   "id": 174854,
+   "city": "Cairo"
+  },
+  {
+   "id": 230152,
+   "city": "Cairo"
+  },
+  {
+   "id": 230158,
+   "city": "Cairo"
+  },
+  {
+   "id": 235281,
+   "city": "Cairo"
+  },
+  {
+   "id": 241177,
+   "city": "Cairo"
+  },
+  {
+   "id": 269097,
+   "city": "Cairo"
+  },
+  {
+   "id": 269098,
+   "city": "Cairo"
+  },
+  {
+   "id": 174385,
+   "city": "Cairo"
+  },
+  {
+   "id": 265528,
+   "city": "Cairo"
+  },
+  {
+   "id": 138305,
+   "city": "Cairo"
+  },
+  {
+   "id": 204896,
+   "city": "Cairo"
+  },
+  {
+   "id": 251238,
+   "city": "Cairo"
+  },
+  {
+   "id": 250762,
+   "city": "Cairo"
+  },
+  {
+   "id": 198305,
+   "city": "Cairo"
+  },
+  {
+   "id": 244155,
+   "city": "Cairo"
+  },
+  {
+   "id": 174030,
+   "city": "Cairo"
+  },
+  {
+   "id": 174806,
+   "city": "Cairo"
+  },
+  {
+   "id": 184828,
+   "city": "Cairo"
+  },
+  {
+   "id": 246873,
+   "city": "Cairo"
+  },
+  {
+   "id": 173744,
+   "city": "Cairo"
+  },
+  {
+   "id": 265476,
+   "city": "Cairo"
+  },
+  {
+   "id": 224777,
+   "city": "Cairo"
+  },
+  {
+   "id": 235815,
+   "city": "Cairo"
+  },
+  {
+   "id": 173866,
+   "city": "Cairo"
+  },
+  {
+   "id": 242732,
+   "city": "Cairo"
+  },
+  {
+   "id": 226095,
+   "city": "Cairo"
+  },
+  {
+   "id": 249916,
+   "city": "Cairo"
+  },
+  {
+   "id": 265789,
+   "city": "Cairo"
+  },
+  {
+   "id": 246595,
+   "city": "Cairo"
+  },
+  {
+   "id": 148812,
+   "city": "Cairo"
+  },
+  {
+   "id": 235874,
+   "city": "Cairo"
+  },
+  {
+   "id": 230258,
+   "city": "Cairo"
+  },
+  {
+   "id": 268662,
+   "city": "Cairo"
+  },
+  {
+   "id": 229248,
+   "city": "Cairo"
+  },
+  {
+   "id": 131974,
+   "city": "Cairo"
+  },
+  {
+   "id": 218517,
+   "city": "Cairo"
+  },
+  {
+   "id": 198308,
+   "city": "Cairo"
+  },
+  {
+   "id": 230312,
+   "city": "Cairo"
+  },
+  {
+   "id": 256439,
+   "city": "Cairo"
+  },
+  {
+   "id": 216760,
+   "city": "Cairo"
+  },
+  {
+   "id": 185016,
+   "city": "Cairo"
+  },
+  {
+   "id": 263870,
+   "city": "Cairo"
+  },
+  {
+   "id": 252607,
+   "city": "Cairo"
+  },
+  {
+   "id": 232130,
+   "city": "Cairo"
+  },
+  {
+   "id": 189641,
+   "city": "Cairo"
+  },
+  {
+   "id": 252639,
+   "city": "Cairo"
+  },
+  {
+   "id": 166390,
+   "city": "Cairo"
+  },
+  {
+   "id": 221688,
+   "city": "Cairo"
+  },
+  {
+   "id": 174859,
+   "city": "Cairo"
+  },
+  {
+   "id": 227869,
+   "city": "Cairo"
+  },
+  {
+   "id": 248135,
+   "city": "Cairo"
+  },
+  {
+   "id": 267537,
+   "city": "Cairo"
+  },
+  {
+   "id": 113324,
+   "city": "Cairo"
+  },
+  {
+   "id": 265682,
+   "city": "Cairo"
+  },
+  {
+   "id": 240343,
+   "city": "Cairo"
+  },
+  {
+   "id": 236874,
+   "city": "Cairo"
+  },
+  {
+   "id": 231832,
+   "city": "Cairo"
+  },
+  {
+   "id": 265871,
+   "city": "Giza"
+  },
+  {
+   "id": 265928,
+   "city": "Giza"
+  },
+  {
+   "id": 265693,
+   "city": "Giza"
+  },
+  {
+   "id": 265723,
+   "city": "Giza"
+  },
+  {
+   "id": 265729,
+   "city": "Giza"
+  },
+  {
+   "id": 265731,
+   "city": "Giza"
+  },
+  {
+   "id": 223529,
+   "city": "Giza"
+  },
+  {
+   "id": 265862,
+   "city": "Giza"
+  },
+  {
+   "id": 265867,
+   "city": "Giza"
+  },
+  {
+   "id": 265872,
+   "city": "Giza"
+  },
+  {
+   "id": 265923,
+   "city": "Giza"
+  },
+  {
+   "id": 265924,
+   "city": "Giza"
+  },
+  {
+   "id": 265925,
+   "city": "Giza"
+  },
+  {
+   "id": 265926,
+   "city": "Giza"
+  },
+  {
+   "id": 265671,
+   "city": "Giza"
+  },
+  {
+   "id": 265927,
+   "city": "Giza"
+  },
+  {
+   "id": 265929,
+   "city": "Giza"
+  },
+  {
+   "id": 265674,
+   "city": "Giza"
+  },
+  {
+   "id": 265930,
+   "city": "Giza"
+  },
+  {
+   "id": 265675,
+   "city": "Giza"
+  },
+  {
+   "id": 265931,
+   "city": "Giza"
+  },
+  {
+   "id": 265932,
+   "city": "Giza"
+  },
+  {
+   "id": 265933,
+   "city": "Giza"
+  },
+  {
+   "id": 265935,
+   "city": "Giza"
+  },
+  {
+   "id": 265936,
+   "city": "Giza"
+  },
+  {
+   "id": 265937,
+   "city": "Giza"
+  },
+  {
+   "id": 114228,
+   "city": "Giza"
+  },
+  {
+   "id": 265870,
+   "city": "Giza"
+  },
+  {
+   "id": 113322,
+   "city": "Giza"
+  },
+  {
+   "id": 113325,
+   "city": "Giza"
+  },
+  {
+   "id": 265934,
+   "city": "Giza"
+  },
+  {
+   "id": 114227,
+   "city": "Giza"
+  },
+  {
+   "id": 168202,
+   "city": "Giza"
+  },
+  {
+   "id": 223530,
+   "city": "Giza"
+  },
+  {
+   "id": 223536,
+   "city": "Giza"
+  },
+  {
+   "id": 265807,
+   "city": "Giza"
+  }
+ ],
+ "disappeared": []
+}
