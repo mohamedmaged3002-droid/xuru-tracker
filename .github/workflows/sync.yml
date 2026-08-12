@@ -1,24 +1,26 @@
-name: sync
+name: calendar-sync
 
-# Availability + rates from Xuru's API -> GitHub Pages .ics + Supabase.
-# Cadence is a correctness parameter, not a preference (L-095): the shorter the gap,
-# the smaller the double-booking window. Xuru's own calendar is the only signal we
-# have, so we resync every 2 hours — matching the Brassbell cadence (D-043).
+# Availability -> GitHub Pages .ics. This is the double-booking-critical path, so it
+# runs often. It is also cheap: the availability bitmap arrives with the unit detail,
+# so a full refresh is ~166 requests (one per unit), not a calendar probe.
+#
+# Cadence is a correctness parameter (L-095): the gap between runs is the window in
+# which we can sell a night Xuru has already sold. 2h matches Brassbell (D-043).
 on:
   schedule:
     - cron: '17 */2 * * *'
   workflow_dispatch:
 
-# Never let two runs scrape Xuru concurrently.
+# Shared with rates.yml so we never hit Xuru from two workflows at once.
 concurrency:
-  group: xuru-sync
+  group: xuru-api
   cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  sync:
+  calendar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,21 +34,11 @@ jobs:
       - name: Build .ics feeds
         run: node src/build-ics.js data/units
 
-      - name: Sweep month totals (change detector)
-        run: node src/sweep-months.js data/units
-
-      - name: Write prices + calendar to Supabase
-        if: env.SUPABASE_SERVICE_ROLE_KEY != ''
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: node src/push-db.js
-
       - name: Commit feeds
         run: |
           git config user.name  "xuru-tracker"
           git config user.email "actions@github.com"
           git add docs data
           # Never fail the run just because nothing changed.
-          git diff --staged --quiet || git commit -m "sync: refresh feeds + rates [skip ci]"
+          git diff --staged --quiet || git commit -m "calendar: refresh feeds [skip ci]"
           git push || true
