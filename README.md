@@ -52,13 +52,41 @@ the unit is left unpriced so its dates render BLOCKED with the WhatsApp CTA, rat
 than being advertised as available. Two units are in this state today
 (`248135`, `267537`).
 
+## Feeds
+
+Served from GitHub Pages, one per BlueKeys `wp_post_id`:
+
+```
+https://mohamedmaged3002-droid.github.io/xuru-tracker/{wp_post_id}.ics
+https://mohamedmaged3002-droid.github.io/xuru-tracker/report.json
+```
+
+`report.json` is the liveness record for **this run** — `feeds[]` with per-unit
+`lastWrittenAt`, and `skippedUnits[]` with the reason. Judge a feed's health from
+that, never from the file merely returning HTTP 200: a stale `.ics` on Pages serves
+200 forever (L-064).
+
 ## Layout
 
 ```
 src/lib.js            config, polite HTTP client, bitmap decoding
+src/catalogue.js      roster + detail refresh; reports units that left the roster
+src/ics.js            bitmap -> VEVENTs
+src/build-ics.js      writes docs/{wp}.ics + report.json, aborts below 90% coverage
 src/rates.js          per-night rate recovery + the month-total change detector
 src/sweep-months.js   12-requests-per-unit month sweep -> data/month-totals.json
+src/photos-to-r2.mjs  Cloudinary -> R2, per-image resume
+src/build_ota_xlsx.py builds "Xuru OTA Listing Pack.xlsx"
 ```
+
+## Schedules
+
+| Workflow | Cadence | Why |
+|---|---|---|
+| `calendar-sync` | every 2h | double-booking-critical, and cheap — one request per unit |
+| `rate-sweep` | daily 02:40 UTC | ~100 min wall-clock; rates move slower than availability |
+
+Both share the `xuru-api` concurrency group, so the two never hit Xuru at once.
 
 ## Conventions
 
@@ -70,9 +98,14 @@ src/sweep-months.js   12-requests-per-unit month sweep -> data/month-totals.json
 
 ## Still to wire
 
-- Supabase writes (needs `SUPABASE_SERVICE_ROLE_KEY` as a repo secret).
-- Per-unit `.ics` generation from the bitmap — VEVENTs need `DTSTAMP` +
-  `LAST-MODIFIED` + a UID encoding the range, or OTAs never pick up changes (L-011).
-- GitHub Actions cron (Node 22).
+- **Supabase writes** — `src/push-db.js` does not exist yet. It needs to write
+  `unit_daily_prices` (EGP at FX 50, blocked nights left unpriced) and upsert the
+  Pages feed URLs into `listing_ical.wordpress_post_id`. Requires
+  `SUPABASE_SERVICE_ROLE_KEY` + `SUPABASE_URL` as repo secrets.
+- **Confirm BookingSync is Xuru's channel master** before any unit is published. If
+  Airbnb/Booking reservations do not write back into the availability bitmap, these
+  feeds are fiction and reselling this inventory double-books.
 - **Ask Xuru for read-only BookingSync API access.** It would replace rate probing
   entirely with one rate-periods call per unit, and remove all load from their site.
+- Cap the published booking horizon at ~12 months: the bitmap runs 3 years but is
+  entirely empty past day 365, so it asserts availability rather than knowing it.
