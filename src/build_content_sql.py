@@ -27,7 +27,17 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 DROP = [
     re.compile(r'At Xuru Stays[^.!?]*[.!?]', re.I),
     re.compile(r'[^.!?\n]*support you (?:on )?via Airbnb messages[^.!?]*[.!?]', re.I),
+    # Mid-sentence operator attribution: "...beach access and is managed by Xuru
+    # Stays." / "... - Egypt's Top Property Management Company". Missed on the first
+    # pass because a frequency count over whole sentences never surfaces a clause
+    # whose surrounding sentence differs per unit — 49 rows shipped with it.
+    re.compile(r'[\s,]*(?:and\s+)?is managed by Xuru Stays[^.]*', re.I),
 ]
+
+# The pattern list above is a best effort and WILL miss phrasings. This is the actual
+# guarantee: nothing mentioning the partner's brand or a channel our guests cannot use
+# may reach the DB. Fail the build rather than ship it.
+FORBIDDEN = re.compile(r'xuru|airbnb|booking\.com', re.I)
 
 def clean(t):
     if not t: return None
@@ -47,7 +57,8 @@ for f in glob.glob(os.path.join(CAT, '*.json')):
     if isinstance(d, dict) and d.get('id'): U.append(d)
 U.sort(key=lambda u: (u['city'], u['id']))
 
-rows, stats = [], {'summary_from_space': 0, 'amenities': 0, 'edited': 0}
+rows, leaks = [], []
+stats = {'summary_from_space': 0, 'amenities': 0, 'edited': 0}
 for i, u in enumerate(U):
     wp = 93001 + i
     desc = u.get('description') or {}
@@ -63,6 +74,15 @@ for i, u in enumerate(U):
 
     amen = [a.get('en_title') for a in (u.get('amenities') or []) if a.get('en_title')]
     if amen: stats['amenities'] += 1
+
+    for col, val in [('short_description', summary), ('the_property', space),
+                     ('guest_access', clean(desc.get('Access'))),
+                     ('neighborhood', clean(desc.get('Neighborhood'))),
+                     ('getting_around', clean(desc.get('Transit'))),
+                     ('other_details', clean(desc.get('Notes')))] + [('amenity', a) for a in amen]:
+        m = FORBIDDEN.search(val or '')
+        if m:
+            leaks.append((wp, col, val[max(0, m.start() - 60):m.end() + 30].replace('\n', ' ')))
 
     rows.append(
         f"({wp},{q(summary)},{q(space)},{q(clean(desc.get('Access')))},"
@@ -87,8 +107,19 @@ FROM (VALUES
 WHERE u.wp_post_id = v.wp AND u.source = 'xuru';
 """
 
+# Hard gate: scan the CLEANED CONTENT VALUES (never the SQL scaffolding, which
+# legitimately contains 'xuru' in comments and the source filter). If anything
+# forbidden survived the DROP patterns, refuse to write the file at all.
+if leaks:
+    raise SystemExit(
+        f"REFUSING TO WRITE: {len(leaks)} value(s) still contain a forbidden term.\n"
+        + "\n".join(f"  wp {wp} [{col}] …{ctx}…" for wp, col, ctx in leaks[:6])
+        + f"\n{'' if len(leaks) <= 6 else f'  … and {len(leaks) - 6} more' }"
+        + "\nAdd a DROP pattern for the phrasing above and re-run.")
+
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, 'w').write(sql)
+
 print(f"units {len(rows)} | boilerplate removed from {stats['edited']} "
       f"| summary taken from first line of Space for {stats['summary_from_space']} "
       f"| amenities for {stats['amenities']}")
