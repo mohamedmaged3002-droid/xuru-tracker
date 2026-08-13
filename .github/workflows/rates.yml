@@ -1,15 +1,14 @@
 name: rate-sweep
 
-# Per-night rates. Deliberately DAILY, not hourly.
+# Per-NIGHT rates, daily. Xuru prices every night differently, so this stores an
+# exact rate per date rather than a monthly average.
 #
-# Each stay quote costs Xuru's booking API ~3s, so even the cheap path (12 month
-# totals per unit = ~2,000 requests) takes ~100 minutes wall-clock. Running this on
-# the 2h calendar cadence would mean hammering a partner's production site
-# continuously, for data that moves far more slowly than availability does.
+# The near horizon (120 days) is always fully re-probed; beyond that a month total
+# acts as a 30-night change detector and unchanged months are carried forward.
+# Steady state is ~21k requests (~90 min); the first cold run is ~60k (~4h).
 #
-# The month totals stored here are what let the per-night pass skip unchanged months
-# (27 probes -> 2). Ask Xuru for read-only BookingSync API access and this whole
-# workflow collapses into one rate-periods call per unit.
+# Ask Xuru for read-only BookingSync API access and this whole workflow collapses
+# into one rate-periods call per unit.
 on:
   schedule:
     - cron: '40 2 * * *'          # 02:40 UTC, off-peak for Egypt
@@ -25,7 +24,7 @@ permissions:
 jobs:
   rates:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -35,13 +34,16 @@ jobs:
       - name: Refresh catalogue
         run: node src/catalogue.js
 
-      - name: Sweep month totals
-        run: node src/sweep-months.js data/units
+      - name: Sweep per-night rates
+        env:
+          HORIZON_DAYS: '365'
+          NEAR_DAYS: '120'
+        run: node src/sweep-nights.js data/units
 
       - name: Commit rates
         run: |
           git config user.name  "xuru-tracker"
           git config user.email "actions@github.com"
-          git add data/month-totals.json data/roster.json
-          git diff --staged --quiet || git commit -m "rates: refresh month totals [skip ci]"
+          git add data/night-rates.json data/roster.json
+          git diff --staged --quiet || git commit -m "rates: refresh per-night prices [skip ci]"
           git push || true
