@@ -169,6 +169,11 @@ no_photo = [u for u in units if not (u.get('images') or [])]
 thin     = [u for u in units if 0 < len(u.get('images') or []) < 8]
 no_avail = [u for u in units if not (u.get('availabilities') or {}).get('map')]
 no_summ  = [u for u in units if not u.get('summary')]
+# Their API cuts `summary` at ~150 chars mid-word, and the full sentence exists
+# nowhere else in the payload — so this is theirs to fix, not ours to guess.
+trunc_summary = [u for u in units
+                 if (u.get('summary') or '').rstrip().endswith('...')
+                 and len(u.get('summary') or '') >= 140]
 def ids(us, n=6):
     s = ', '.join(f"{CODE[u['id']]} ({u['id']})" for u in us[:n])
     return s + (f' … +{len(us)-n} more' if len(us) > n else '')
@@ -194,6 +199,10 @@ issues = [
   'BookingSync API access would replace that with one call per unit and remove the load '
   'from your site entirely.',
   'A read-only BookingSync API key, or a scheduled rate + min-stay export.'),
+ (f'{len(trunc_summary)} units', 'Listing summary is cut off mid-word in your API',
+  'The summary field truncates at ~150 characters ("…dining options are at w..."), and the '
+  'full sentence is not recoverable from any other field, so the listing opens mid-thought.',
+  f'The untruncated summary text. {ids(trunc_summary)}'),
  ('all 166', 'Minimum-stay rules are not exposed',
   'We may quote a stay Xuru would reject, which surfaces as a failed booking to the guest.',
   'Per-unit (ideally per-date) minimum-stay rules.'),
