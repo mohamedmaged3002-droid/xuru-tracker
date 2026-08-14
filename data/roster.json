@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-08-14T19:17:31.763Z",
- "count": 165,
+ "fetchedAt": "2026-08-14T20:49:24.123Z",
+ "count": 166,
  "roster": [
   {
    "id": 182530,
@@ -359,6 +359,10 @@
    "city": "Cairo"
   },
   {
+   "id": 174806,
+   "city": "Cairo"
+  },
+  {
    "id": 184828,
    "city": "Cairo"
   },
@@ -663,7 +667,5 @@
    "city": "Giza"
   }
  ],
- "disappeared": [
-  174806
- ]
+ "disappeared": []
 }
