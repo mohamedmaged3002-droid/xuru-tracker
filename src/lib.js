@@ -8,21 +8,50 @@ export const WP_BASE = 93001;         // Xuru block: 93001..93166
 export const CITIES = ['El Gouna', 'Cairo', 'Giza'];
 
 export const CONCURRENCY = 3;         // deliberately low
-export const SPACING_MS = 250;
 export const MAX_RETRIES = 3;
 export const BREAKER_TRIP = 12;       // consecutive failures -> abort the run
 
+// Base pacing. `spacing` is mutable: a 429 means we are simply asking for too much,
+// and retrying the ONE request harder does not fix that — the whole run has to slow
+// down. Every 429 doubles the gap between all subsequent calls (up to a cap) and it
+// only decays back slowly. Learned the hard way on 2026-08-14, when a local sweep and
+// the CI sweep ran at once and Xuru started 429ing both.
+export const SPACING_MS = Number(process.env.SPACING_MS || 400);
+const MAX_SPACING_MS = 8000;
+let spacing = SPACING_MS;
+let okSinceThrottle = 0;
+
 let consecutiveFailures = 0;
 let lastCall = 0;
+
+export const currentSpacing = () => spacing;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export class CircuitOpen extends Error {}
 
 async function paced() {
-  const wait = lastCall + SPACING_MS - Date.now();
+  const wait = lastCall + spacing - Date.now();
   if (wait > 0) await sleep(wait);
   lastCall = Date.now();
+}
+
+/** A 429 slows the ENTIRE run down, not just the call that got it. */
+function throttleHarder(retryAfterSec) {
+  const prev = spacing;
+  spacing = Math.min(MAX_SPACING_MS, Math.max(spacing * 2, (retryAfterSec || 0) * 1000));
+  okSinceThrottle = 0;
+  if (spacing !== prev) console.error(`  … 429 — global spacing ${prev}ms -> ${spacing}ms`);
+}
+
+/** Decay back toward normal, but slowly: 200 clean calls per halving. */
+function maybeRelax() {
+  if (spacing <= SPACING_MS) return;
+  if (++okSinceThrottle >= 200) {
+    spacing = Math.max(SPACING_MS, Math.round(spacing / 2));
+    okSinceThrottle = 0;
+    console.error(`  … recovered — global spacing eased to ${spacing}ms`);
+  }
 }
 
 export async function api(path, params = {}) {
@@ -39,15 +68,26 @@ export async function api(path, params = {}) {
         headers: { accept: 'application/json', 'user-agent': 'BlueKeys-XuruTracker/1.0 (partner sync; ops@bluekeys.co)' },
         signal: AbortSignal.timeout(30_000),
       });
-      if (res.status === 429 || res.status >= 500) throw new Error(`HTTP ${res.status}`);
+      if (res.status === 429) {
+        const ra = Number(res.headers.get('retry-after')) || 0;
+        throttleHarder(ra);
+        const err = new Error('HTTP 429');
+        err.rateLimited = true;
+        err.retryAfter = ra;
+        throw err;
+      }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       consecutiveFailures = 0;
+      maybeRelax();
       return json.data ?? json;
     } catch (err) {
       consecutiveFailures++;
       if (attempt === MAX_RETRIES) throw err;
-      await sleep([15_000, 30_000, 60_000][attempt]);   // L-048 backoff ladder
+      // A 429 needs a far longer wait than a dropped socket — and Retry-After,
+      // when the server sends one, is authoritative.
+      const ladder = err.rateLimited ? [60_000, 180_000, 300_000] : [15_000, 30_000, 60_000];
+      await sleep(Math.max(ladder[attempt], (err.retryAfter || 0) * 1000));
     }
   }
 }

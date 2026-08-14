@@ -11,9 +11,12 @@ on:
     - cron: '17 */2 * * *'
   workflow_dispatch:
 
-# Shared with rates.yml so we never hit Xuru from two workflows at once.
+# Its OWN group, deliberately not shared with rates.yml. The shared group meant a
+# multi-hour rate sweep queued the calendar behind it — and a stale calendar is how
+# you double-book. Contention with the sweep is handled in the client instead: a 429
+# slows the whole run down adaptively (src/lib.js).
 concurrency:
-  group: xuru-api
+  group: xuru-calendar
   cancel-in-progress: false
 
 permissions:
