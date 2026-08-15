@@ -40,6 +40,22 @@ jobs:
           NEAR_DAYS: '120'
         run: node src/sweep-nights.js data/units
 
+      - name: Install mail dependency
+        # Only needed for the change alert. --no-save keeps the repo lockfile-free;
+        # everything else in this repo runs on stdlib + fetch.
+        run: npm install nodemailer@^7 --no-audit --no-fund --no-save
+
+      - name: Push prices to Supabase
+        # Skips itself (exit 0) when the secrets are absent, so a fork or an
+        # unconfigured repo still gets a green sweep instead of a red X.
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: node src/push-db.mjs
+
       - name: Commit rates
         run: |
           git config user.name  "xuru-tracker"

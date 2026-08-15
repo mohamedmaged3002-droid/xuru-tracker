@@ -4,9 +4,16 @@
   "private": true,
   "type": "module",
   "description": "Tracks Xuru Stays availability + per-night rates for BlueKeys (partner sync).",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "catalogue": "node src/catalogue.js",
-    "sweep": "node src/sweep-months.js"
+    "sweep": "node src/sweep-nights.js",
+    "push": "node src/push-db.mjs",
+    "ics": "node src/build-ics.js"
+  },
+  "optionalDependencies": {
+    "nodemailer": "^7.0.0"
   }
 }

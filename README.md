@@ -84,7 +84,7 @@ src/build_ota_xlsx.py builds "Xuru OTA Listing Pack.xlsx"
 | Workflow | Cadence | Why |
 |---|---|---|
 | `calendar-sync` | every 2h | double-booking-critical, and cheap — one request per unit |
-| `rate-sweep` | daily 02:40 UTC | ~100 min wall-clock; rates move slower than availability |
+| `rate-sweep` | daily 02:40 UTC | sweeps per-night rates, **pushes them to Supabase**, and emails on big moves |
 
 Both share the `xuru-api` concurrency group, so the two never hit Xuru at once.
 
@@ -96,12 +96,32 @@ Both share the `xuru-api` concurrency group, so the two never hit Xuru at once.
 - Prices land in `unit_daily_prices`; a date with **no row renders BLOCKED**, which is
   the intended behaviour and must never be papered over by extrapolating rates.
 
-## Still to wire
+## Prices -> Supabase
 
-- **Supabase writes** — `src/push-db.js` does not exist yet. It needs to write
-  `unit_daily_prices` (EGP at FX 50, blocked nights left unpriced) and upsert the
-  Pages feed URLs into `listing_ical.wordpress_post_id`. Requires
-  `SUPABASE_SERVICE_ROLE_KEY` + `SUPABASE_URL` as repo secrets.
+`src/push-db.mjs` writes `unit_daily_prices` over PostgREST (EGP at pinned FX 50):
+
+- Bulk loads go over the REST API, never as SQL literals through a model context
+  (L-112) — ~57k rows per run.
+- **Stale rows are deleted**, not just upserted. A night booked on Xuru's side
+  disappears from our rate set, and its old price row would keep the night sellable.
+- A unit with unknown availability is skipped whole — no delete, no insert.
+- Verified by **content MD5**, local vs read-back. A row count passes even when the
+  bytes are wrong; the run exits non-zero on mismatch.
+- No secrets set -> exits 0 without writing, so the sweep still goes green.
+
+### Change alert
+After a successful load it compares each unit's median against the pre-load snapshot
+and emails when one moves **±40%** or loses **50%+** of its priced nights
+(`ALERT_PCT` / `ALERT_DROP_PCT`).
+
+It is **alert-only, never blocking**. A guardrail that refuses to apply a change
+freezes legitimate price cuts and quietly serves stale rates — which is exactly why
+`dynamic-pricing`'s guardrail was deleted. Prices always apply; you just get told.
+
+Secrets required on the repo: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, and
+optionally `SMTP_USER` / `SMTP_PASS` / `NOTIFY_EMAIL` for the alert.
+
+## Still to wire
 - **Confirm BookingSync is Xuru's channel master** before any unit is published. If
   Airbnb/Booking reservations do not write back into the availability bitmap, these
   feeds are fiction and reselling this inventory double-books.
