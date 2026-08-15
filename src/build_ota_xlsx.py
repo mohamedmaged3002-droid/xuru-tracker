@@ -16,9 +16,14 @@ from openpyxl.utils import get_column_letter
 from openpyxl.formatting.rule import ColorScaleRule
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CAT = os.environ.get('XURU_CATALOGUE',
-    '/private/tmp/claude-503/-Users-MAGED-inv/12a3e218-9380-4d80-bf6e-445d7ab81773/scratchpad/xuru/units')
+# The repo's own catalogue, refreshed by catalogue.js on every CI run. It used to
+# default to a session scratchpad, which silently emptied and produced a workbook
+# with zero units — see the guard below.
+CAT = os.environ.get('XURU_CATALOGUE', os.path.join(ROOT, 'data', 'units'))
 TOTALS = os.path.join(ROOT, 'data', 'month-totals.json')
+NIGHTS = os.path.join(ROOT, 'data', 'night-rates.json')
+ICAL_BASE = 'https://mohamedmaged3002-droid.github.io/xuru-tracker'
+SITE_BASE = 'https://bluekeys.co/listings'
 OUT = '/Users/MAGED/inv/Xuru OTA Listing Pack.xlsx'
 FX = 50
 TODAY = dt.date(2026, 8, 13)
@@ -35,11 +40,35 @@ for f in glob.glob(os.path.join(CAT, '*.json')):
     if isinstance(d, dict) and d.get('id'):
         units.append(d)
 units.sort(key=lambda u: (u['city'], u['id']))
+if len(units) < 100:
+    raise SystemExit(f"REFUSING TO BUILD: only {len(units)} units found in {CAT}. "
+                     "Expected ~166 — run `node src/catalogue.js` first. A workbook built "
+                     "from a partial catalogue looks complete and is not.")
 totals = json.load(open(TOTALS)) if os.path.exists(TOTALS) else {}
+
+# Per-night rates are the real source now. Month columns are derived from them:
+# median of the actual nightly rates in that month, which is what an OTA rate
+# plan wants, rather than a whole-month quote divided by its nights.
+nights = json.load(open(NIGHTS))['units'] if os.path.exists(NIGHTS) else {}
+night_by_xuru, night_month = {}, {}
+for wp, u in nights.items():
+    xid = u.get('xuru_id')
+    if xid is None: continue
+    night_by_xuru[xid] = u
+    per = collections.defaultdict(list)
+    for day, usd in (u.get('rates') or {}).items():
+        per[day[:7]].append(usd)
+    night_month[xid] = {m: sorted(v)[len(v)//2] for m, v in per.items() if v}
 
 # wp_post_id + source_code assignment must match the DB insert exactly.
 WP = {u['id']: 93001 + i for i, u in enumerate(units)}
 CODE = {u['id']: 'XU%03d' % (i + 1) for i, u in enumerate(units)}
+
+def _slugify(t):
+    t = re.sub(r'[^a-zA-Z0-9]+', '-', (t or '')).strip('-').lower()
+    return re.sub(r'-+', '-', t)[:70].strip('-')
+# must match units.slug exactly — the bluekeys_url column is only useful if it resolves
+SLUG = {u['id']: f"xuru-{_slugify(u.get('headline'))}-{u['id']}" for u in units}
 
 # Same mapping table as the DB insert (kept in sync by hand — see build_xuru_sql.py).
 RULES = [
@@ -73,7 +102,8 @@ def classify(u):
         if re.search(rx, blob): return comp, area, city
     return '', '', u['city']
 
-MONTHS = sorted({k for t in totals.values() for k in t.get('months', {})})[:13]
+MONTHS = sorted({m for v in night_month.values() for m in v})[:13] or \
+         sorted({k for t in totals.values() for k in t.get('months', {})})[:13]
 
 def month_label(key):
     y, m = key.split('-')
@@ -96,7 +126,7 @@ ws = wb.active; ws.title = 'Xuru Master'
 H = ['wp_post_id','code','operator_unit_code','title','city','area','compound','type',
      'bedrooms','baths','guests (BK)','guests (Xuru)','nightly USD (from)','cleaning USD',
      'deposit USD','photos','amenities','availability','blocked nights (365)',
-     'lat','lng','xuru_url','ota_eligible','why_not']
+     'lat','lng','ical_url','bluekeys_url','xuru_url','priced nights','ota_eligible','why_not']
 style_header(ws, H, 'Xuru Stays — OTA Listing Pack',
     f'Generated {TODAY}. 166 units staged as BlueKeys drafts (wp 93001–93166). '
     f'Prices are Xuru\'s own USD rates — BlueKeys takes 0% (partner, nightly-only). '
@@ -113,6 +143,9 @@ for u in units:
     if availability != 'ok': reasons.append('no availability data from Xuru')
     if nphoto == 0:  reasons.append('no photos')
     elif nphoto < 8: reasons.append(f'only {nphoto} photos (OTAs want 10+)')
+    priced = len((night_by_xuru.get(u['id']) or {}).get('rates') or {})
+    if priced == 0:
+        reasons.append('no prices yet — renders BLOCKED until the next sweep')
     eligible = 'YES' if not reasons else 'NO'
     beds = int(u.get('number_of_bedrooms') or 0)
     rows.append({
@@ -124,29 +157,32 @@ for u in units:
                  u.get('damage_deposit'), nphoto, namen, availability,
                  t.get('blocked_365'), None if not u.get('location_lat') else float(u['location_lat']),
                  None if not u.get('location_lng') else float(u['location_lng']),
-                 f"https://www.xurustays.com/unit-details/{u['id']}", eligible, '; '.join(reasons)],
+                 f"{ICAL_BASE}/{WP[u['id']]}.ics",
+                 f"{SITE_BASE}/{SLUG[u['id']]}",
+                 f"https://www.xurustays.com/unit-details/{u['id']}",
+                 priced, eligible, '; '.join(reasons)],
         'eligible': eligible})
 rows.sort(key=lambda r: r['sort'])
 for i, r in enumerate(rows, 5):
     for c, v in enumerate(r['vals'], 1):
         cell = ws.cell(row=i, column=c, value=v)
         if r['eligible'] == 'NO': cell.fill = RED
-for col, w in zip('ABCDEFGHIJKLMNOPQRSTUVWX',
-                  [11,8,20,46,10,18,20,11,10,7,11,12,15,13,13,8,10,13,16,11,11,44,12,34]):
+for col, w in zip('ABCDEFGHIJKLMNOPQRSTUVWXYZAA',
+                  [11,8,20,46,10,18,20,11,10,7,11,12,15,13,13,8,10,13,16,11,11,62,52,44,13,12,40]):
     ws.column_dimensions[col].width = w
 
 # -------------------------------------------------------- Tab 2: Monthly Prices
 ws2 = wb.create_sheet('Monthly Prices')
 H2 = ['wp_post_id','code','title','area','beds'] + [month_label(m) for m in MONTHS]
 style_header(ws2, H2, 'Xuru Stays — average nightly rate by month (USD)',
-    'Average nightly USD = the exact stay quote for the whole month ÷ nights in that month. '
-    'Not an estimate: Xuru\'s quote is the exact sum of its nights. Blank = no rate published. '
-    'Blocked nights still carry a rate, so read this next to "blocked nights" on the Master tab.')
+    'MEDIAN of the real per-night rates we hold for that month — every night is priced '
+    'individually, so this is a true midpoint, not a monthly average. Blocked nights are '
+    'excluded (they are never priced). Blank = no rates held for that month yet.')
 for i, u in enumerate(units, 5):
     comp, area, city = classify(u)
-    t = totals.get(str(u['id']), {}).get('months', {})
+    nm = night_month.get(u['id'], {})
     vals = [WP[u['id']], CODE[u['id']], u.get('headline'), area, u.get('number_of_bedrooms')]
-    vals += [(t.get(m) or {}).get('avg') for m in MONTHS]
+    vals += [nm.get(m) for m in MONTHS]
     for c, v in enumerate(vals, 1):
         ws2.cell(row=i, column=c, value=v)
 if MONTHS:
