@@ -74,7 +74,10 @@ src/catalogue.js      roster + detail refresh; reports units that left the roste
 src/ics.js            bitmap -> VEVENTs
 src/build-ics.js      writes docs/{wp}.ics + report.json, aborts below 90% coverage
 src/rates.js          per-night rate recovery + the month-total change detector
-src/sweep-months.js   12-requests-per-unit month sweep -> data/month-totals.json
+src/sweep-nights.js   per-night rates; near horizon always re-probed, far horizon
+                      gated by the month-total change detector
+src/sweep-months.js   (superseded) month totals only -> data/month-totals.json
+src/push-db.mjs       prices -> Supabase over PostgREST, hash-verified + change alert
 src/photos-to-r2.mjs  Cloudinary -> R2, per-image resume
 src/build_ota_xlsx.py builds "Xuru OTA Listing Pack.xlsx"
 ```
@@ -86,7 +89,10 @@ src/build_ota_xlsx.py builds "Xuru OTA Listing Pack.xlsx"
 | `calendar-sync` | every 2h | double-booking-critical, and cheap — one request per unit |
 | `rate-sweep` | daily 02:40 UTC | sweeps per-night rates, **pushes them to Supabase**, and emails on big moves |
 
-Both share the `xuru-api` concurrency group, so the two never hit Xuru at once.
+They use **separate** concurrency groups (`xuru-calendar` / `xuru-rates`). Sharing one
+meant a multi-hour rate sweep queued the calendar behind it, and a stale calendar is
+the failure the feeds exist to prevent. Contention is handled in the client instead:
+a 429 slows the whole run down adaptively and decays back only after 200 clean calls.
 
 ## Conventions
 
