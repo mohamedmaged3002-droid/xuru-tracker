@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-08-14T22:44:30.695Z",
- "count": 150,
+ "fetchedAt": "2026-08-15T01:53:14.463Z",
+ "count": 166,
  "roster": [
   {
    "id": 182530,
@@ -11,7 +11,15 @@
    "city": "El Gouna"
   },
   {
+   "id": 242959,
+   "city": "El Gouna"
+  },
+  {
    "id": 165961,
+   "city": "El Gouna"
+  },
+  {
+   "id": 243020,
    "city": "El Gouna"
   },
   {
@@ -20,6 +28,10 @@
   },
   {
    "id": 205451,
+   "city": "El Gouna"
+  },
+  {
+   "id": 242854,
    "city": "El Gouna"
   },
   {
@@ -91,6 +103,14 @@
    "city": "El Gouna"
   },
   {
+   "id": 235177,
+   "city": "El Gouna"
+  },
+  {
+   "id": 235948,
+   "city": "El Gouna"
+  },
+  {
    "id": 145585,
    "city": "El Gouna"
   },
@@ -104,6 +124,10 @@
   },
   {
    "id": 164292,
+   "city": "El Gouna"
+  },
+  {
+   "id": 243160,
    "city": "El Gouna"
   },
   {
@@ -135,7 +159,15 @@
    "city": "El Gouna"
   },
   {
+   "id": 258881,
+   "city": "El Gouna"
+  },
+  {
    "id": 162629,
+   "city": "El Gouna"
+  },
+  {
+   "id": 248906,
    "city": "El Gouna"
   },
   {
@@ -155,11 +187,19 @@
    "city": "El Gouna"
   },
   {
+   "id": 259452,
+   "city": "El Gouna"
+  },
+  {
    "id": 171197,
    "city": "El Gouna"
   },
   {
    "id": 155329,
+   "city": "El Gouna"
+  },
+  {
+   "id": 267971,
    "city": "El Gouna"
   },
   {
@@ -203,7 +243,23 @@
    "city": "El Gouna"
   },
   {
+   "id": 235326,
+   "city": "El Gouna"
+  },
+  {
    "id": 176316,
+   "city": "El Gouna"
+  },
+  {
+   "id": 250287,
+   "city": "El Gouna"
+  },
+  {
+   "id": 269063,
+   "city": "El Gouna"
+  },
+  {
+   "id": 250119,
    "city": "El Gouna"
   },
   {
@@ -212,6 +268,10 @@
   },
   {
    "id": 182842,
+   "city": "El Gouna"
+  },
+  {
+   "id": 258715,
    "city": "El Gouna"
   },
   {
@@ -224,6 +284,10 @@
   },
   {
    "id": 167666,
+   "city": "El Gouna"
+  },
+  {
+   "id": 250288,
    "city": "El Gouna"
   },
   {
@@ -603,22 +667,5 @@
    "city": "Giza"
   }
  ],
- "disappeared": [
-  235177,
-  235326,
-  235948,
-  242854,
-  242959,
-  243020,
-  243160,
-  248906,
-  250119,
-  250287,
-  250288,
-  258715,
-  258881,
-  259452,
-  267971,
-  269063
- ]
+ "disappeared": []
 }

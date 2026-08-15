@@ -1,19 +1,19 @@
 {
- "generatedAt": "2026-08-14T22:44:30.832Z",
+ "generatedAt": "2026-08-15T01:53:14.609Z",
  "source": "xurustays.com /api/unit availabilities bitmap",
  "units": 166,
- "written": 166,
- "skipped": 0,
+ "written": 163,
+ "skipped": 3,
  "horizonDays": 1096,
  "feeds": [
   {
    "wp": 93001,
    "xuru_id": 113324,
    "city": "Cairo",
-   "blocked_nights": 22,
+   "blocked_nights": 21,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93002,
@@ -22,34 +22,34 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93003,
    "xuru_id": 138305,
    "city": "Cairo",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93004,
    "xuru_id": 148812,
    "city": "Cairo",
-   "blocked_nights": 2,
+   "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93005,
    "xuru_id": 166390,
    "city": "Cairo",
-   "blocked_nights": 3,
+   "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93006,
@@ -58,7 +58,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93007,
@@ -67,7 +67,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93008,
@@ -76,16 +76,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93009,
    "xuru_id": 174385,
    "city": "Cairo",
-   "blocked_nights": 1,
+   "blocked_nights": 0,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 0,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93010,
@@ -94,7 +94,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93011,
@@ -103,7 +103,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93012,
@@ -112,25 +112,25 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93013,
    "xuru_id": 184828,
    "city": "Cairo",
-   "blocked_nights": 1,
+   "blocked_nights": 0,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 0,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93014,
    "xuru_id": 185016,
    "city": "Cairo",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93015,
@@ -139,70 +139,70 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93016,
    "xuru_id": 198305,
    "city": "Cairo",
-   "blocked_nights": 16,
+   "blocked_nights": 15,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93017,
    "xuru_id": 198308,
    "city": "Cairo",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93018,
    "xuru_id": 204896,
    "city": "Cairo",
-   "blocked_nights": 1,
+   "blocked_nights": 0,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 0,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93019,
    "xuru_id": 216760,
    "city": "Cairo",
-   "blocked_nights": 23,
+   "blocked_nights": 22,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93020,
    "xuru_id": 218517,
    "city": "Cairo",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93021,
    "xuru_id": 221688,
    "city": "Cairo",
-   "blocked_nights": 14,
+   "blocked_nights": 13,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93022,
    "xuru_id": 224777,
    "city": "Cairo",
-   "blocked_nights": 11,
+   "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93023,
@@ -211,61 +211,61 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93024,
    "xuru_id": 227869,
    "city": "Cairo",
-   "blocked_nights": 3,
+   "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93025,
    "xuru_id": 229248,
    "city": "Cairo",
-   "blocked_nights": 20,
+   "blocked_nights": 19,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93026,
    "xuru_id": 230152,
    "city": "Cairo",
-   "blocked_nights": 3,
+   "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93027,
    "xuru_id": 230158,
    "city": "Cairo",
-   "blocked_nights": 5,
+   "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93028,
    "xuru_id": 230258,
    "city": "Cairo",
-   "blocked_nights": 2,
+   "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93029,
    "xuru_id": 230312,
    "city": "Cairo",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93030,
@@ -274,25 +274,25 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93031,
    "xuru_id": 232130,
    "city": "Cairo",
-   "blocked_nights": 1,
+   "blocked_nights": 0,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 0,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93032,
    "xuru_id": 235281,
    "city": "Cairo",
-   "blocked_nights": 7,
+   "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93033,
@@ -301,16 +301,16 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93034,
    "xuru_id": 235874,
    "city": "Cairo",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93035,
@@ -319,7 +319,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93036,
@@ -328,43 +328,43 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93037,
    "xuru_id": 241177,
    "city": "Cairo",
-   "blocked_nights": 3,
+   "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93038,
    "xuru_id": 242732,
    "city": "Cairo",
-   "blocked_nights": 9,
+   "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93039,
    "xuru_id": 244155,
    "city": "Cairo",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93040,
    "xuru_id": 246595,
    "city": "Cairo",
-   "blocked_nights": 33,
+   "blocked_nights": 32,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93041,
@@ -373,16 +373,16 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93042,
    "xuru_id": 248135,
    "city": "Cairo",
-   "blocked_nights": 2,
+   "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93043,
@@ -391,7 +391,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93044,
@@ -400,7 +400,7 @@
    "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93045,
@@ -409,7 +409,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93046,
@@ -418,7 +418,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93047,
@@ -427,7 +427,7 @@
    "blocked_nights": 13,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93048,
@@ -436,7 +436,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93049,
@@ -445,7 +445,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93050,
@@ -454,16 +454,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93051,
    "xuru_id": 265528,
    "city": "Cairo",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93052,
@@ -472,43 +472,43 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93053,
    "xuru_id": 265789,
    "city": "Cairo",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93054,
    "xuru_id": 267537,
    "city": "Cairo",
-   "blocked_nights": 1,
+   "blocked_nights": 0,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 0,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93055,
    "xuru_id": 268662,
    "city": "Cairo",
-   "blocked_nights": 9,
+   "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93056,
    "xuru_id": 269097,
    "city": "Cairo",
-   "blocked_nights": 2,
+   "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93057,
@@ -517,43 +517,43 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93058,
    "xuru_id": 144177,
    "city": "El Gouna",
-   "blocked_nights": 25,
+   "blocked_nights": 24,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93059,
    "xuru_id": 144433,
    "city": "El Gouna",
-   "blocked_nights": 15,
+   "blocked_nights": 17,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93060,
    "xuru_id": 145585,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93061,
    "xuru_id": 148806,
    "city": "El Gouna",
-   "blocked_nights": 22,
+   "blocked_nights": 21,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93062,
@@ -562,16 +562,16 @@
    "blocked_nights": 20,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93063,
    "xuru_id": 151456,
    "city": "El Gouna",
-   "blocked_nights": 3,
+   "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93064,
@@ -580,16 +580,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93065,
    "xuru_id": 154575,
    "city": "El Gouna",
-   "blocked_nights": 11,
+   "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93066,
@@ -598,16 +598,16 @@
    "blocked_nights": 19,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93067,
    "xuru_id": 155329,
    "city": "El Gouna",
-   "blocked_nights": 13,
+   "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93068,
@@ -616,16 +616,16 @@
    "blocked_nights": 20,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93069,
    "xuru_id": 158950,
    "city": "El Gouna",
-   "blocked_nights": 7,
+   "blocked_nights": 6,
    "horizon_days": 1096,
-   "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 1,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93070,
@@ -634,25 +634,25 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93071,
    "xuru_id": 162629,
    "city": "El Gouna",
-   "blocked_nights": 12,
+   "blocked_nights": 11,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93072,
    "xuru_id": 162631,
    "city": "El Gouna",
-   "blocked_nights": 9,
+   "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93073,
@@ -661,43 +661,43 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93074,
    "xuru_id": 164193,
    "city": "El Gouna",
-   "blocked_nights": 12,
+   "blocked_nights": 11,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93075,
    "xuru_id": 164202,
    "city": "El Gouna",
-   "blocked_nights": 7,
+   "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93076,
    "xuru_id": 164283,
    "city": "El Gouna",
-   "blocked_nights": 13,
+   "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93077,
    "xuru_id": 164292,
    "city": "El Gouna",
-   "blocked_nights": 20,
+   "blocked_nights": 19,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93078,
@@ -706,70 +706,70 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93079,
    "xuru_id": 165253,
    "city": "El Gouna",
-   "blocked_nights": 16,
+   "blocked_nights": 15,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93080,
    "xuru_id": 165961,
    "city": "El Gouna",
-   "blocked_nights": 10,
+   "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93081,
    "xuru_id": 166603,
    "city": "El Gouna",
-   "blocked_nights": 5,
+   "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93082,
    "xuru_id": 167666,
    "city": "El Gouna",
-   "blocked_nights": 16,
+   "blocked_nights": 15,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93083,
    "xuru_id": 167898,
    "city": "El Gouna",
-   "blocked_nights": 8,
+   "blocked_nights": 7,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93084,
    "xuru_id": 167910,
    "city": "El Gouna",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93085,
    "xuru_id": 171197,
    "city": "El Gouna",
-   "blocked_nights": 17,
+   "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 4,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93086,
@@ -778,43 +778,43 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93087,
    "xuru_id": 176316,
    "city": "El Gouna",
-   "blocked_nights": 10,
+   "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93088,
    "xuru_id": 180704,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93089,
    "xuru_id": 182530,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93090,
    "xuru_id": 182842,
    "city": "El Gouna",
-   "blocked_nights": 9,
+   "blocked_nights": 8,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93091,
@@ -823,16 +823,16 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93092,
    "xuru_id": 187559,
    "city": "El Gouna",
-   "blocked_nights": 9,
+   "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93093,
@@ -841,7 +841,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93094,
@@ -850,25 +850,25 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93095,
    "xuru_id": 197533,
    "city": "El Gouna",
-   "blocked_nights": 20,
+   "blocked_nights": 19,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93096,
    "xuru_id": 204277,
    "city": "El Gouna",
-   "blocked_nights": 7,
+   "blocked_nights": 6,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93097,
@@ -877,34 +877,34 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93098,
    "xuru_id": 205451,
    "city": "El Gouna",
-   "blocked_nights": 17,
+   "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93099,
    "xuru_id": 205645,
    "city": "El Gouna",
-   "blocked_nights": 12,
+   "blocked_nights": 11,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93100,
    "xuru_id": 205911,
    "city": "El Gouna",
-   "blocked_nights": 3,
+   "blocked_nights": 5,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93101,
@@ -913,25 +913,25 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93102,
    "xuru_id": 209857,
    "city": "El Gouna",
-   "blocked_nights": 10,
+   "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93103,
    "xuru_id": 217948,
    "city": "El Gouna",
-   "blocked_nights": 18,
+   "blocked_nights": 17,
    "horizon_days": 1096,
    "events": 4,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93104,
@@ -940,7 +940,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93105,
@@ -949,7 +949,7 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93106,
@@ -958,16 +958,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93107,
    "xuru_id": 228181,
    "city": "El Gouna",
-   "blocked_nights": 4,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93108,
@@ -976,25 +976,25 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93109,
    "xuru_id": 229120,
    "city": "El Gouna",
-   "blocked_nights": 5,
+   "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93110,
    "xuru_id": 230618,
    "city": "El Gouna",
-   "blocked_nights": 15,
+   "blocked_nights": 14,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93111,
@@ -1003,7 +1003,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93112,
@@ -1012,16 +1012,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93113,
    "xuru_id": 234253,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93114,
@@ -1030,16 +1030,16 @@
    "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93115,
    "xuru_id": 235177,
    "city": "El Gouna",
-   "blocked_nights": 11,
+   "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93116,
@@ -1048,88 +1048,88 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93117,
    "xuru_id": 235948,
    "city": "El Gouna",
-   "blocked_nights": 17,
+   "blocked_nights": 15,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93118,
    "xuru_id": 242854,
    "city": "El Gouna",
-   "blocked_nights": 13,
+   "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93119,
    "xuru_id": 242959,
    "city": "El Gouna",
-   "blocked_nights": 15,
+   "blocked_nights": 12,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93120,
    "xuru_id": 243020,
    "city": "El Gouna",
-   "blocked_nights": 10,
+   "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93121,
    "xuru_id": 243160,
    "city": "El Gouna",
-   "blocked_nights": 8,
+   "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93122,
    "xuru_id": 248906,
    "city": "El Gouna",
-   "blocked_nights": 15,
+   "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93123,
    "xuru_id": 250119,
    "city": "El Gouna",
-   "blocked_nights": 14,
+   "blocked_nights": 12,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93124,
    "xuru_id": 250287,
    "city": "El Gouna",
-   "blocked_nights": 12,
+   "blocked_nights": 10,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93125,
    "xuru_id": 250288,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 3,
    "horizon_days": 1096,
-   "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 1,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93126,
@@ -1138,16 +1138,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93127,
    "xuru_id": 258881,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93128,
@@ -1156,16 +1156,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93129,
    "xuru_id": 267971,
    "city": "El Gouna",
-   "blocked_nights": 8,
+   "blocked_nights": 5,
    "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93130,
@@ -1174,7 +1174,7 @@
    "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93131,
@@ -1183,34 +1183,25 @@
    "blocked_nights": 32,
    "horizon_days": 1096,
    "events": 8,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93132,
    "xuru_id": 113325,
    "city": "Giza",
-   "blocked_nights": 11,
+   "blocked_nights": 10,
    "horizon_days": 1096,
-   "events": 4,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 3,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93133,
    "xuru_id": 114227,
    "city": "Giza",
-   "blocked_nights": 22,
+   "blocked_nights": 21,
    "horizon_days": 1096,
    "events": 6,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
-  },
-  {
-   "wp": 93134,
-   "xuru_id": 114228,
-   "city": "Giza",
-   "blocked_nights": 5,
-   "horizon_days": 1096,
-   "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93135,
@@ -1219,34 +1210,34 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93136,
    "xuru_id": 223529,
    "city": "Giza",
-   "blocked_nights": 23,
+   "blocked_nights": 22,
    "horizon_days": 1096,
-   "events": 5,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "events": 4,
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93137,
    "xuru_id": 223530,
    "city": "Giza",
-   "blocked_nights": 34,
+   "blocked_nights": 33,
    "horizon_days": 1096,
    "events": 8,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93138,
    "xuru_id": 223536,
    "city": "Giza",
-   "blocked_nights": 21,
+   "blocked_nights": 20,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93139,
@@ -1255,7 +1246,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93140,
@@ -1264,7 +1255,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93141,
@@ -1273,7 +1264,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93142,
@@ -1282,7 +1273,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93143,
@@ -1291,7 +1282,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93144,
@@ -1300,7 +1291,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93145,
@@ -1309,25 +1300,25 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93146,
    "xuru_id": 265807,
    "city": "Giza",
-   "blocked_nights": 11,
+   "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93147,
    "xuru_id": 265862,
    "city": "Giza",
-   "blocked_nights": 7,
+   "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93148,
@@ -1336,7 +1327,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93149,
@@ -1345,7 +1336,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93150,
@@ -1354,7 +1345,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93151,
@@ -1363,7 +1354,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93152,
@@ -1372,7 +1363,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93153,
@@ -1381,7 +1372,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93154,
@@ -1390,7 +1381,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93155,
@@ -1399,7 +1390,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93156,
@@ -1408,7 +1399,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93157,
@@ -1417,7 +1408,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93158,
@@ -1426,7 +1417,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93159,
@@ -1435,7 +1426,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93160,
@@ -1444,7 +1435,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93161,
@@ -1453,16 +1444,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93162,
    "xuru_id": 265933,
    "city": "Giza",
-   "blocked_nights": 7,
+   "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93163,
@@ -1471,7 +1462,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
   },
   {
    "wp": 93164,
@@ -1480,26 +1471,24 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "lastWrittenAt": "2026-08-15T01:53:14.609Z"
+  }
+ ],
+ "skippedUnits": [
+  {
+   "wp": 93134,
+   "xuru_id": 114228,
+   "reason": "availability unknown (empty bitmap) — failing closed"
   },
   {
    "wp": 93165,
    "xuru_id": 265936,
-   "city": "Giza",
-   "blocked_nights": 0,
-   "horizon_days": 1096,
-   "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "reason": "availability unknown (empty bitmap) — failing closed"
   },
   {
    "wp": 93166,
    "xuru_id": 265937,
-   "city": "Giza",
-   "blocked_nights": 0,
-   "horizon_days": 1096,
-   "events": 0,
-   "lastWrittenAt": "2026-08-14T22:44:30.832Z"
+   "reason": "availability unknown (empty bitmap) — failing closed"
   }
- ],
- "skippedUnits": []
+ ]
 }
