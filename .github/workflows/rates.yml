@@ -13,6 +13,11 @@ on:
   schedule:
     - cron: '40 2 * * *'          # 02:40 UTC, off-peak for Egypt
   workflow_dispatch:
+    inputs:
+      max_minutes:
+        description: 'Wall-clock budget for the sweep (minutes). Short values are for verifying the push path.'
+        required: false
+        default: '240'
 
 concurrency:
   group: xuru-rates
@@ -35,9 +40,12 @@ jobs:
         run: node src/catalogue.js
 
       - name: Sweep per-night rates
+        # Budget < job timeout (350) on purpose: an overrunning job is KILLED, and the
+        # push/commit steps below would never run. The sweep resumes next run.
         env:
           HORIZON_DAYS: '365'
           NEAR_DAYS: '120'
+          MAX_MINUTES: ${{ inputs.max_minutes || '240' }}
         run: node src/sweep-nights.js data/units
 
       - name: Install mail dependency

@@ -47,6 +47,14 @@ let probes = 0, skippedMonths = 0, unpriced = [], failed = [], resumed = 0;
 // means a crash (or a laptop lid) costs one unit, and a restart resumes instead of
 // paying the whole cost again.
 const RESUME_WINDOW_H = Number(process.env.RESUME_WINDOW_H || 20);
+
+// Wall-clock budget. Throttling makes the runtime unpredictable, and a job that
+// overruns its GitHub timeout is KILLED — so the push and commit steps never run and
+// the whole run's work is thrown away despite checkpointing. Stopping ourselves,
+// cleanly and early, means the push always happens and the next run resumes.
+const MAX_MINUTES = Number(process.env.MAX_MINUTES || 0);
+const deadline = MAX_MINUTES ? Date.now() + MAX_MINUTES * 60_000 : Infinity;
+let stoppedEarly = false;
 const OUTFILE = path.join(DATA, 'night-rates.json');
 function checkpoint() {
   out.probes = probes; out.skippedMonths = skippedMonths;
@@ -79,6 +87,16 @@ for (const [n, u] of units.entries()) {
   if (freshEnough(prevU.sweptAt)) {
     out.units[wp] = prevU;
     resumed++;
+    continue;
+  }
+
+  // Out of budget: carry the rest forward untouched and let the push proceed.
+  if (Date.now() > deadline) {
+    if (!stoppedEarly) {
+      console.error(`  … ${MAX_MINUTES}min budget reached — stopping cleanly so the push step still runs`);
+      stoppedEarly = true;
+    }
+    if (Object.keys(prevU).length) out.units[wp] = prevU;
     continue;
   }
 
@@ -141,4 +159,7 @@ async function quoteMonth(id, m) {
 
 checkpoint();
 const priced = Object.values(out.units).reduce((a, u) => a + Object.keys(u.rates || {}).length, 0);
-console.error(`DONE: ${priced} priced nights across ${units.length} units · ${probes} probes · ${skippedMonths} months skipped · ${resumed} resumed · ${unpriced.length} unpriced · ${failed.length} failed${failed.length ? ' (' + failed.join(',') + ')' : ''}`);
+const swept = Object.values(out.units).filter((u) => u.sweptAt).length;
+console.error(`DONE${stoppedEarly ? ' (budget reached — resumes next run)' : ''}: ${priced} priced nights · ` +
+  `${swept}/${units.length} units swept · ${probes} probes · ${skippedMonths} months skipped · ` +
+  `${resumed} resumed · ${unpriced.length} unpriced · ${failed.length} failed${failed.length ? ' (' + failed.join(',') + ')' : ''}`);
