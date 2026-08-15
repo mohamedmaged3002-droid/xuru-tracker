@@ -110,9 +110,19 @@ for (let i = 0; i < payload.length; i += 1000) {
 }
 
 // ------------------------------------------------------------------- verify hash
+// Scope the read-back to each unit's OWN horizon. Rows outside it are legitimate
+// history: yesterday's load wrote dates that are now in the past, and the delete
+// only ever touches [lo,hi], so they correctly survive. Reading the whole unit
+// compares a different set to the one we hashed locally and mismatches every day
+// after the first — which is exactly what happened on 2026-08-15 (143 past-dated
+// rows). Verify what we wrote, not what else is there.
 const readBack = [];
 for (const wp of wps) {
-  const r = await rest(`unit_daily_prices?wp_post_id=eq.${wp}&select=wp_post_id,date,price&order=date&limit=2000`);
+  const { lo, hi } = perUnit.get(wp);
+  const r = await rest(
+    `unit_daily_prices?wp_post_id=eq.${wp}&date=gte.${lo}&date=lte.${hi}` +
+    `&select=wp_post_id,date,price&order=date&limit=2000`
+  );
   readBack.push(...(await r.json()));
 }
 const dbHash = crypto.createHash('md5').update(
