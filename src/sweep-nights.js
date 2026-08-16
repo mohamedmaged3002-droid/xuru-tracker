@@ -38,6 +38,19 @@ const units = fs.readdirSync(CAT).filter(f => f.endsWith('.json')).map(f => {
   return d.data ?? d;
 }).filter(u => u?.id).sort((a, b) => (a.city + a.id).localeCompare(b.city + b.id));
 
+// wp_post_id is assigned from the CANONICAL (city, id) order and must never move.
+const WP = new Map(units.map((u, i) => [u.id, 93001 + i]));
+
+// ...but the PROCESSING order is least-recently-swept first. With a fixed order the
+// budget expired at the same place every run, so the tail was permanently starved:
+// units 93159-93166 went unpriced for days while the first 156 were re-swept nightly.
+// Never-swept units sort first, then oldest sweptAt.
+const queue = [...units].sort((a, b) => {
+  const ta = prev.units?.[WP.get(a.id)]?.sweptAt || '';
+  const tb = prev.units?.[WP.get(b.id)]?.sweptAt || '';
+  return ta.localeCompare(tb);
+});
+
 const today = new Date(iso(new Date()) + 'T00:00:00Z');
 const nearEnd = iso(addDays(today, NEAR));
 const out = { generatedAt: new Date().toISOString(), horizonDays: HORIZON, nearDays: NEAR, units: {} };
@@ -69,8 +82,10 @@ const quote1 = async (id, d) => {
   return parseQuote((await api('/unit', { id, startDate: iso(d), endDate: iso(addDays(d, 1)) }))?.price);
 };
 
-for (const [n, u] of units.entries()) {
-  const wp = 93001 + n;
+let processed = 0;
+for (const u of queue) {
+  const wp = WP.get(u.id);
+  processed++;
   const blocked = blockedDates(u.availabilities);
   if (blocked === null) {
     // Availability unknown -> price nothing. Dates render BLOCKED, which is the
@@ -147,8 +162,8 @@ for (const [n, u] of units.entries()) {
                     pricedNights: Object.keys(rates).length, blockedNights: blocked.size,
                     sweptAt: new Date().toISOString() };
   checkpoint();                       // after EVERY unit, so a crash costs one unit
-  if ((n + 1) % 10 === 0) {
-    console.error(`  ${n + 1}/${units.length} units · ${probes} probes · ${skippedMonths} months skipped`);
+  if (processed % 10 === 0) {
+    console.error(`  ${processed}/${units.length} units · ${probes} probes · ${skippedMonths} months skipped`);
   }
 }
 
