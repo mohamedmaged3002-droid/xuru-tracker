@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-08-18T07:08:56.672Z",
+ "generatedAt": "2026-08-18T08:56:50.503Z",
  "source": "xurustays.com /api/unit availabilities bitmap",
  "units": 166,
- "written": 162,
- "skipped": 4,
+ "written": 166,
+ "skipped": 0,
  "horizonDays": 1096,
  "feeds": [
   {
@@ -13,7 +13,7 @@
    "blocked_nights": 15,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93002,
@@ -22,7 +22,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93003,
@@ -31,7 +31,7 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93004,
@@ -40,7 +40,7 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93005,
@@ -49,7 +49,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93006,
@@ -58,7 +58,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93007,
@@ -67,7 +67,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93008,
@@ -76,7 +76,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93009,
@@ -85,7 +85,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93010,
@@ -94,7 +94,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93011,
@@ -103,7 +103,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93012,
@@ -112,7 +112,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93013,
@@ -121,7 +121,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93014,
@@ -130,7 +130,16 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
+  },
+  {
+   "wp": 93015,
+   "xuru_id": 189641,
+   "city": "Cairo",
+   "blocked_nights": 0,
+   "horizon_days": 1096,
+   "events": 0,
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93016,
@@ -139,7 +148,7 @@
    "blocked_nights": 15,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93017,
@@ -148,16 +157,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93018,
    "xuru_id": 204896,
    "city": "Cairo",
-   "blocked_nights": 2,
+   "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93019,
@@ -166,7 +175,7 @@
    "blocked_nights": 19,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93020,
@@ -175,7 +184,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93021,
@@ -184,7 +193,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93022,
@@ -193,7 +202,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93023,
@@ -202,7 +211,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93024,
@@ -211,7 +220,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93025,
@@ -220,7 +229,7 @@
    "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93026,
@@ -229,7 +238,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93027,
@@ -238,7 +247,7 @@
    "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93028,
@@ -247,7 +256,7 @@
    "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93029,
@@ -256,7 +265,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93030,
@@ -265,7 +274,16 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
+  },
+  {
+   "wp": 93031,
+   "xuru_id": 232130,
+   "city": "Cairo",
+   "blocked_nights": 7,
+   "horizon_days": 1096,
+   "events": 1,
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93032,
@@ -274,7 +292,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93033,
@@ -283,7 +301,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93034,
@@ -292,7 +310,7 @@
    "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93035,
@@ -301,7 +319,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93036,
@@ -310,7 +328,7 @@
    "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93037,
@@ -319,7 +337,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93038,
@@ -328,7 +346,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93039,
@@ -337,7 +355,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93040,
@@ -346,7 +364,7 @@
    "blocked_nights": 29,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93041,
@@ -355,7 +373,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93042,
@@ -364,7 +382,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93043,
@@ -373,7 +391,7 @@
    "blocked_nights": 18,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93044,
@@ -382,7 +400,7 @@
    "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93045,
@@ -391,7 +409,25 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
+  },
+  {
+   "wp": 93046,
+   "xuru_id": 252607,
+   "city": "Cairo",
+   "blocked_nights": 0,
+   "horizon_days": 1096,
+   "events": 0,
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
+  },
+  {
+   "wp": 93047,
+   "xuru_id": 252639,
+   "city": "Cairo",
+   "blocked_nights": 13,
+   "horizon_days": 1096,
+   "events": 1,
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93048,
@@ -400,7 +436,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93049,
@@ -409,7 +445,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93050,
@@ -418,7 +454,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93051,
@@ -427,7 +463,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93052,
@@ -436,7 +472,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93053,
@@ -445,7 +481,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93054,
@@ -454,7 +490,7 @@
    "blocked_nights": 1,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93055,
@@ -463,7 +499,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93056,
@@ -472,7 +508,7 @@
    "blocked_nights": 27,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93057,
@@ -481,7 +517,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93058,
@@ -490,7 +526,7 @@
    "blocked_nights": 17,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93059,
@@ -499,7 +535,7 @@
    "blocked_nights": 15,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93060,
@@ -508,7 +544,7 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93061,
@@ -517,7 +553,7 @@
    "blocked_nights": 18,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93062,
@@ -526,7 +562,7 @@
    "blocked_nights": 18,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93063,
@@ -535,7 +571,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93064,
@@ -544,7 +580,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93065,
@@ -553,7 +589,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93066,
@@ -562,7 +598,7 @@
    "blocked_nights": 22,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93067,
@@ -571,7 +607,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93068,
@@ -580,7 +616,7 @@
    "blocked_nights": 18,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93069,
@@ -589,7 +625,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93070,
@@ -598,7 +634,7 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93071,
@@ -607,7 +643,7 @@
    "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93072,
@@ -616,7 +652,7 @@
    "blocked_nights": 13,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93073,
@@ -625,7 +661,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93074,
@@ -634,7 +670,7 @@
    "blocked_nights": 11,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93075,
@@ -643,7 +679,7 @@
    "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93076,
@@ -652,7 +688,7 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93077,
@@ -661,7 +697,7 @@
    "blocked_nights": 20,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93078,
@@ -670,7 +706,7 @@
    "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93079,
@@ -679,7 +715,7 @@
    "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93080,
@@ -688,16 +724,16 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93081,
    "xuru_id": 166603,
    "city": "El Gouna",
-   "blocked_nights": 6,
+   "blocked_nights": 9,
    "horizon_days": 1096,
-   "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "events": 2,
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93082,
@@ -706,7 +742,7 @@
    "blocked_nights": 14,
    "horizon_days": 1096,
    "events": 4,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93083,
@@ -715,7 +751,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93084,
@@ -724,7 +760,7 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93085,
@@ -733,7 +769,7 @@
    "blocked_nights": 14,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93086,
@@ -742,7 +778,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93087,
@@ -751,7 +787,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93088,
@@ -760,7 +796,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93089,
@@ -769,7 +805,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93090,
@@ -778,7 +814,7 @@
    "blocked_nights": 11,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93091,
@@ -787,7 +823,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93092,
@@ -796,7 +832,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93093,
@@ -805,7 +841,7 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93094,
@@ -814,7 +850,7 @@
    "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93095,
@@ -823,7 +859,7 @@
    "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93096,
@@ -832,7 +868,7 @@
    "blocked_nights": 6,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93097,
@@ -841,7 +877,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93098,
@@ -850,7 +886,7 @@
    "blocked_nights": 23,
    "horizon_days": 1096,
    "events": 4,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93099,
@@ -859,7 +895,7 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93100,
@@ -868,7 +904,7 @@
    "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93101,
@@ -877,7 +913,7 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93102,
@@ -886,7 +922,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93103,
@@ -895,7 +931,7 @@
    "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 4,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93104,
@@ -904,7 +940,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93105,
@@ -913,7 +949,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93106,
@@ -922,7 +958,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93107,
@@ -931,7 +967,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93108,
@@ -940,7 +976,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93109,
@@ -949,7 +985,7 @@
    "blocked_nights": 5,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93110,
@@ -958,7 +994,7 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93111,
@@ -967,7 +1003,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93112,
@@ -976,7 +1012,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93113,
@@ -985,7 +1021,7 @@
    "blocked_nights": 2,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93114,
@@ -994,16 +1030,16 @@
    "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93115,
    "xuru_id": 235177,
    "city": "El Gouna",
-   "blocked_nights": 14,
+   "blocked_nights": 9,
    "horizon_days": 1096,
-   "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "events": 1,
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93116,
@@ -1012,7 +1048,7 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93117,
@@ -1021,7 +1057,7 @@
    "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93118,
@@ -1030,7 +1066,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93119,
@@ -1039,7 +1075,7 @@
    "blocked_nights": 13,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93120,
@@ -1048,7 +1084,7 @@
    "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93121,
@@ -1057,7 +1093,7 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93122,
@@ -1066,7 +1102,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93123,
@@ -1075,7 +1111,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93124,
@@ -1084,7 +1120,7 @@
    "blocked_nights": 7,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93125,
@@ -1093,7 +1129,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93126,
@@ -1102,7 +1138,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93127,
@@ -1111,7 +1147,7 @@
    "blocked_nights": 16,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93128,
@@ -1120,7 +1156,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93129,
@@ -1129,7 +1165,7 @@
    "blocked_nights": 10,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93130,
@@ -1138,7 +1174,7 @@
    "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93131,
@@ -1147,7 +1183,7 @@
    "blocked_nights": 34,
    "horizon_days": 1096,
    "events": 8,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93132,
@@ -1156,7 +1192,7 @@
    "blocked_nights": 17,
    "horizon_days": 1096,
    "events": 5,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93133,
@@ -1165,7 +1201,7 @@
    "blocked_nights": 23,
    "horizon_days": 1096,
    "events": 6,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93134,
@@ -1174,7 +1210,7 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93135,
@@ -1183,7 +1219,7 @@
    "blocked_nights": 9,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93136,
@@ -1192,7 +1228,7 @@
    "blocked_nights": 22,
    "horizon_days": 1096,
    "events": 4,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93137,
@@ -1201,7 +1237,7 @@
    "blocked_nights": 30,
    "horizon_days": 1096,
    "events": 8,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93138,
@@ -1210,7 +1246,7 @@
    "blocked_nights": 17,
    "horizon_days": 1096,
    "events": 3,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93139,
@@ -1219,7 +1255,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93140,
@@ -1228,7 +1264,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93141,
@@ -1237,7 +1273,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93142,
@@ -1246,7 +1282,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93143,
@@ -1255,7 +1291,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93144,
@@ -1264,7 +1300,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93145,
@@ -1273,7 +1309,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93146,
@@ -1282,7 +1318,7 @@
    "blocked_nights": 12,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93147,
@@ -1291,7 +1327,7 @@
    "blocked_nights": 4,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93148,
@@ -1300,7 +1336,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93149,
@@ -1309,7 +1345,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93150,
@@ -1318,7 +1354,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93151,
@@ -1327,7 +1363,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93152,
@@ -1336,7 +1372,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93153,
@@ -1345,7 +1381,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93154,
@@ -1354,7 +1390,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93155,
@@ -1363,7 +1399,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93156,
@@ -1372,7 +1408,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93157,
@@ -1381,7 +1417,7 @@
    "blocked_nights": 8,
    "horizon_days": 1096,
    "events": 2,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93158,
@@ -1390,7 +1426,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93159,
@@ -1399,7 +1435,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93160,
@@ -1408,7 +1444,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93161,
@@ -1417,7 +1453,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93162,
@@ -1426,7 +1462,7 @@
    "blocked_nights": 3,
    "horizon_days": 1096,
    "events": 1,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93163,
@@ -1435,7 +1471,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93164,
@@ -1444,7 +1480,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93165,
@@ -1453,7 +1489,7 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   },
   {
    "wp": 93166,
@@ -1462,29 +1498,8 @@
    "blocked_nights": 0,
    "horizon_days": 1096,
    "events": 0,
-   "lastWrittenAt": "2026-08-18T07:08:56.672Z"
+   "lastWrittenAt": "2026-08-18T08:56:50.503Z"
   }
  ],
- "skippedUnits": [
-  {
-   "wp": 93015,
-   "xuru_id": 189641,
-   "reason": "availability unknown (empty bitmap) — failing closed"
-  },
-  {
-   "wp": 93031,
-   "xuru_id": 232130,
-   "reason": "availability unknown (empty bitmap) — failing closed"
-  },
-  {
-   "wp": 93046,
-   "xuru_id": 252607,
-   "reason": "availability unknown (empty bitmap) — failing closed"
-  },
-  {
-   "wp": 93047,
-   "xuru_id": 252639,
-   "reason": "availability unknown (empty bitmap) — failing closed"
-  }
- ]
+ "skippedUnits": []
 }
